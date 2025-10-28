@@ -4,6 +4,7 @@ import ivideonScreenshot from '@assets/unnamed_1761668226614.png';
 import deviceSelectionScreenshot from '@assets/unnamed (1)_1761668898895.png';
 import connectionMethodScreenshot from '@assets/unnamed (3)_1761669149528.png';
 import cableConnectionScreenshot from '@assets/unnamed (4)_1761669218517.png';
+import wifiConnectionScreenshot from '@assets/unnamed (5)_1761669298875.png';
 
 export default function Home() {
   return (
@@ -45,6 +46,14 @@ export default function Home() {
             instruction="Через кабель: Укажите серийный номер камеры (либо нажмите Использовать MAC-адрес и введите MAC-адрес) они расположены на коробке и на устройстве, далее нажмите Продолжить."
             imageSrc={cableConnectionScreenshot}
             imageAlt="Подключение IP-камеры через кабель"
+            isSubStep={true}
+          />
+          
+          <InstructionStep
+            stepNumber="3.2"
+            instruction="Через Wi-Fi: Подключаем камеру к сети питания"
+            imageSrc={wifiConnectionScreenshot}
+            imageAlt="Подключение камеры к питанию для Wi-Fi настройки"
             isSubStep={true}
           />
         </div>
