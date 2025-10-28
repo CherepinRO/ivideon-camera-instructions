@@ -1,12 +1,12 @@
 import Header from '@/components/Header';
 import InstructionStep from '@/components/InstructionStep';
-import ivideonScreenshot from '@assets/unnamed_1761668226614.png';
-import deviceSelectionScreenshot from '@assets/unnamed (1)_1761668898895.png';
-import connectionMethodScreenshot from '@assets/unnamed (3)_1761669149528.png';
-import cableConnectionScreenshot from '@assets/unnamed (4)_1761669218517.png';
-import wifiConnectionScreenshot from '@assets/unnamed (5)_1761669298875.png';
-import wifiCredentialsScreenshot from '@assets/unnamed (6)_1761669429280.png';
-import qrCodeScreenshot from '@assets/unnamed (7)_1761669626013.png';
+import ivideonScreenshot from '@assets/high_res/images/image1.png';
+import deviceSelectionScreenshot from '@assets/high_res/images/image2.png';
+import connectionMethodScreenshot from '@assets/high_res/images/image3.png';
+import cableConnectionScreenshot from '@assets/high_res/images/image4.png';
+import wifiConnectionScreenshot from '@assets/high_res/images/image5.png';
+import wifiCredentialsScreenshot from '@assets/high_res/images/image6.png';
+import qrCodeScreenshot from '@assets/high_res/images/image7.png';
 
 export default function Home() {
   return (
