@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция по подключению Ivideon камеры</title>
+    <meta name="description" content="Пошаговая инструкция по подключению IP-камеры Ivideon через кабель или Wi-Fi. Простое руководство с иллюстрациями для быстрой настройки камеры видеонаблюдения.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background-color: #0066CC;
+            color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .intro-section {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            border-left: 4px solid #0066CC;
+        }
+
+        .intro-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #0066CC;
+        }
+
+        .intro-section p {
+            font-size: 1.125rem;
+            color: #4a4a4a;
+        }
+
+        .instructions-container {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .instruction-step {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .instruction-step.sub-step {
+            margin-left: 3.5rem;
+        }
+
+        .step-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .step-badge {
+            min-width: 48px;
+            width: 48px;
+            height: 48px;
+            background-color: #0066CC;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .sub-step .step-badge {
+            min-width: 40px;
+            width: 40px;
+            height: 40px;
+            font-size: 1rem;
+        }
+
+        .step-text {
+            font-size: 1.125rem;
+            padding-top: 0.75rem;
+            flex: 1;
+        }
+
+        .step-image {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .additional-content {
+            margin-left: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .additional-content .content-title {
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+
+        .additional-content .content-note {
+            font-size: 1.125rem;
+            color: #6b7280;
+        }
+
+        footer {
+            border-top: 1px solid #e0e0e0;
+            margin-top: 4rem;
+            padding: 2rem;
+        }
+
+        footer .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+
+            .intro-section {
+                padding: 1.5rem;
+            }
+
+            .intro-section h2 {
+                font-size: 1.25rem;
+            }
+
+            .intro-section p {
+                font-size: 1rem;
+            }
+
+            .instruction-step.sub-step {
+                margin-left: 2rem;
+            }
+
+            .additional-content {
+                margin-left: 2rem;
+            }
+
+            .step-badge {
+                min-width: 40px;
+                width: 40px;
+                height: 40px;
+                font-size: 1.125rem;
+            }
+
+            .sub-step .step-badge {
+                min-width: 36px;
+                width: 36px;
+                height: 36px;
+                font-size: 0.875rem;
+            }
+
+            .step-text {
+                font-size: 1rem;
+                padding-top: 0.5rem;
+            }
+
+            .additional-content .content-title,
+            .additional-content .content-note {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-icon">📹</div>
+            <h1>Инструкция по подключению Ivideon камеры</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h2>Добро пожаловать!</h2>
+            <p>Следуйте этой простой инструкции для подключения вашей IP-камеры к системе Ivideon.</p>
+        </section>
+
+        <div class="instructions-container">
+            <!-- Step 1 -->
+            <div class="instruction-step">
+                <div class="step-header">
+                    <div class="step-badge">1</div>
+                    <p class="step-text">Нажимаем кнопку добавить устройство</p>
+                </div>
+                <div class="step-image">
+                    <img src="attached_assets/high_res/images/image1.png" alt="Кнопка добавить устройство в Ivideon">
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="instruction-step">
+                <div class="step-header">
+                    <div class="step-badge">2</div>
+                    <p class="step-text">Выбираем IP-камера</p>
+                </div>
+                <div class="step-image">
+                    <img src="attached_assets/high_res/images/image2.png" alt="Диалог выбора устройства для подключения">
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="instruction-step">
+                <div class="step-header">
+                    <div class="step-badge">3</div>
+                    <p class="step-text">Выбираем способ подключения</p>
+                </div>
+                <div class="step-image">
+                    <img src="attached_assets/high_res/images/image3.png" alt="Выбор способа подключения камеры">
+                </div>
+            </div>
+
+            <!-- Step 3.1 -->
+            <div class="instruction-step sub-step">
+                <div class="step-header">
+                    <div class="step-badge">3.1</div>
+                    <p class="step-text">Через кабель: Укажите серийный номер камеры (либо нажмите Использовать MAC-адрес и введите MAC-адрес) они расположены на коробке и на устройстве, далее нажмите Продолжить.</p>
+                </div>
+                <div class="step-image">
+                    <img src="attached_assets/high_res/images/image4.png" alt="Подключение IP-камеры через кабель">
+                </div>
+            </div>
+
+            <!-- Step 3.2 -->
+            <div class="instruction-step sub-step">
+                <div class="step-header">
+                    <div class="step-badge">3.2</div>
+                    <p class="step-text">Через Wi-Fi: Подключаем камеру к сети питания</p>
+                </div>
+                <div class="step-image">
+                    <img src="attached_assets/high_res/images/image5.png" alt="Подключение камеры к питанию для Wi-Fi настройки">
+                </div>
+            </div>
+
+            <!-- Additional Wi-Fi content -->
+            <div class="additional-content">
+                <div>
+                    <p class="content-title">Вводим название сети и пароль</p>
+                    <p class="content-note">В 99.99% случаев вам нужна сеть в 2.4ГГц. Данные с логином и паролем как правило можно найти на коробке от роутера ( если вы их не меняли)</p>
+                </div>
+                <div class="step-image">
+                    <img src="attached_assets/high_res/images/image6.png" alt="Ввод данных Wi-Fi сети">
+                </div>
+
+                <div>
+                    <p class="step-text">Далее нам нужно что бы камера посмотрела на QR код и обработала его , после успешной обработка, следуем инструкциям</p>
+                </div>
+                <div class="step-image">
+                    <img src="attached_assets/high_res/images/image7.png" alt="QR код для сканирования камерой">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Ivideon. Инструкция по подключению IP-камер.</p>
+        </div>
+    </footer>
+</body>
+</html>
