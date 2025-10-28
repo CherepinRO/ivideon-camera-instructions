@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import InstructionStep from '@/components/InstructionStep';
 import ivideonScreenshot from '@assets/unnamed_1761668226614.png';
 import deviceSelectionScreenshot from '@assets/unnamed (1)_1761668898895.png';
+import connectionMethodScreenshot from '@assets/unnamed (3)_1761669149528.png';
 
 export default function Home() {
   return (
@@ -29,6 +30,13 @@ export default function Home() {
             instruction="Выберите устройство которое хотите подключить"
             imageSrc={deviceSelectionScreenshot}
             imageAlt="Диалог выбора устройства для подключения"
+          />
+          
+          <InstructionStep
+            stepNumber={3}
+            instruction="Выбираем способ подключения"
+            imageSrc={connectionMethodScreenshot}
+            imageAlt="Выбор способа подключения камеры"
           />
         </div>
       </main>
