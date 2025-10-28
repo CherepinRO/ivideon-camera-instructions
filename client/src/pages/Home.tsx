@@ -3,6 +3,7 @@ import InstructionStep from '@/components/InstructionStep';
 import ivideonScreenshot from '@assets/unnamed_1761668226614.png';
 import deviceSelectionScreenshot from '@assets/unnamed (1)_1761668898895.png';
 import connectionMethodScreenshot from '@assets/unnamed (3)_1761669149528.png';
+import cableConnectionScreenshot from '@assets/unnamed (4)_1761669218517.png';
 
 export default function Home() {
   return (
@@ -37,6 +38,14 @@ export default function Home() {
             instruction="Выбираем способ подключения"
             imageSrc={connectionMethodScreenshot}
             imageAlt="Выбор способа подключения камеры"
+          />
+          
+          <InstructionStep
+            stepNumber="3.1"
+            instruction="Через кабель: Укажите серийный номер камеры (либо нажмите Использовать MAC-адрес и введите MAC-адрес) они расположены на коробке и на устройстве, далее нажмите Продолжить."
+            imageSrc={cableConnectionScreenshot}
+            imageAlt="Подключение IP-камеры через кабель"
+            isSubStep={true}
           />
         </div>
       </main>

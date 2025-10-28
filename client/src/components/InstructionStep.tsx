@@ -1,24 +1,26 @@
 interface InstructionStepProps {
-  stepNumber: number;
+  stepNumber: number | string;
   instruction: string;
   imageSrc?: string;
   imageAlt?: string;
+  isSubStep?: boolean;
 }
 
 export default function InstructionStep({ 
   stepNumber, 
   instruction, 
   imageSrc, 
-  imageAlt 
+  imageAlt,
+  isSubStep = false
 }: InstructionStepProps) {
   return (
-    <div className="space-y-6 md:space-y-8" data-testid={`instruction-step-${stepNumber}`}>
+    <div className={`space-y-6 md:space-y-8 ${isSubStep ? 'ml-8 md:ml-14' : ''}`} data-testid={`instruction-step-${stepNumber}`}>
       <div className="flex items-start gap-4">
         <div 
-          className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0"
+          className={`${isSubStep ? 'w-9 h-9 md:w-10 md:h-10' : 'w-10 h-10 md:w-12 md:h-12'} rounded-full bg-primary flex items-center justify-center flex-shrink-0`}
           data-testid={`step-badge-${stepNumber}`}
         >
-          <span className="text-lg md:text-xl font-semibold text-primary-foreground">
+          <span className={`${isSubStep ? 'text-base md:text-lg' : 'text-lg md:text-xl'} font-semibold text-primary-foreground`}>
             {stepNumber}
           </span>
         </div>
