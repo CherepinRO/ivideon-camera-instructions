@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import InstructionStep from '@/components/InstructionStep';
 import ivideonScreenshot from '@assets/unnamed_1761668226614.png';
+import deviceSelectionScreenshot from '@assets/unnamed (1)_1761668898895.png';
 
 export default function Home() {
   return (
@@ -21,6 +22,13 @@ export default function Home() {
             instruction="В личном кабинете ivideon нажмите кнопку Добавить устройство"
             imageSrc={ivideonScreenshot}
             imageAlt="Интерфейс личного кабинета Ivideon с кнопкой Добавить устройство"
+          />
+          
+          <InstructionStep
+            stepNumber={2}
+            instruction="Выберите устройство которое хотите подключить"
+            imageSrc={deviceSelectionScreenshot}
+            imageAlt="Диалог выбора устройства для подключения"
           />
         </div>
       </main>
