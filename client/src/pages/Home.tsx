@@ -6,6 +6,7 @@ import connectionMethodScreenshot from '@assets/unnamed (3)_1761669149528.png';
 import cableConnectionScreenshot from '@assets/unnamed (4)_1761669218517.png';
 import wifiConnectionScreenshot from '@assets/unnamed (5)_1761669298875.png';
 import wifiCredentialsScreenshot from '@assets/unnamed (6)_1761669429280.png';
+import qrCodeScreenshot from '@assets/unnamed (7)_1761669626013.png';
 
 export default function Home() {
   return (
@@ -76,6 +77,24 @@ export default function Home() {
               <img 
                 src={wifiCredentialsScreenshot} 
                 alt="Ввод данных Wi-Fi сети"
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="space-y-4">
+              <p className="text-base md:text-lg leading-relaxed" data-testid="qr-code-instruction">
+                Далее нам нужно что бы камера посмотрела на QR код и обработала его , после успешной обработка, следуем инструкциям
+              </p>
+            </div>
+            
+            <div 
+              className="border border-border rounded-lg overflow-hidden"
+              style={{ boxShadow: 'var(--shadow-lg)' }}
+              data-testid="qr-code-image"
+            >
+              <img 
+                src={qrCodeScreenshot} 
+                alt="QR код для сканирования камерой"
                 className="w-full h-auto"
               />
             </div>
