@@ -5,6 +5,7 @@ import deviceSelectionScreenshot from '@assets/unnamed (1)_1761668898895.png';
 import connectionMethodScreenshot from '@assets/unnamed (3)_1761669149528.png';
 import cableConnectionScreenshot from '@assets/unnamed (4)_1761669218517.png';
 import wifiConnectionScreenshot from '@assets/unnamed (5)_1761669298875.png';
+import wifiCredentialsScreenshot from '@assets/unnamed (6)_1761669429280.png';
 
 export default function Home() {
   return (
@@ -56,6 +57,29 @@ export default function Home() {
             imageAlt="Подключение камеры к питанию для Wi-Fi настройки"
             isSubStep={true}
           />
+          
+          <div className="ml-8 md:ml-14 space-y-6 md:space-y-8" data-testid="wifi-credentials-section">
+            <div className="space-y-4">
+              <p className="text-base md:text-lg leading-relaxed font-medium" data-testid="wifi-credentials-title">
+                Вводим название сети и пароль
+              </p>
+              <p className="text-base md:text-lg leading-relaxed text-muted-foreground" data-testid="wifi-credentials-note">
+                В 99.99% случаев вам нужна сеть в 2.4ГГц. Данные с логином и паролем как правило можно найти на коробке от роутера ( если вы их не меняли)
+              </p>
+            </div>
+            
+            <div 
+              className="border border-border rounded-lg overflow-hidden"
+              style={{ boxShadow: 'var(--shadow-lg)' }}
+              data-testid="wifi-credentials-image"
+            >
+              <img 
+                src={wifiCredentialsScreenshot} 
+                alt="Ввод данных Wi-Fi сети"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
         </div>
       </main>
       
