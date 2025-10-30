@@ -4,20 +4,20 @@ import { Camera, Package, Clock, UserPlus } from 'lucide-react';
 export default function Index() {
   const pages = [
     {
+      title: 'Регистрация',
+      description: 'Создание личного кабинета в системе видеонаблюдения Ivideon',
+      icon: UserPlus,
+      href: '/registration',
+      steps: '3 шага',
+      testId: 'card-registration'
+    },
+    {
       title: 'Подключение камер',
       description: 'Пошаговая инструкция по подключению IP-камеры Ivideon через кабель или Wi-Fi',
       icon: Camera,
       href: '/connection',
       steps: '7 шагов',
       testId: 'card-connection'
-    },
-    {
-      title: 'Интеграция с WB.Point',
-      description: 'Руководство по настройке камер для пунктов выдачи заказов Wildberries',
-      icon: Package,
-      href: '/wb-integration',
-      steps: '10 шагов',
-      testId: 'card-wb-integration'
     },
     {
       title: 'Настройка времени',
@@ -28,12 +28,12 @@ export default function Index() {
       testId: 'card-time-settings'
     },
     {
-      title: 'Регистрация',
-      description: 'Создание личного кабинета в системе видеонаблюдения Ivideon',
-      icon: UserPlus,
-      href: '/registration',
-      steps: '3 шага',
-      testId: 'card-registration'
+      title: 'Интеграция с WB.Point',
+      description: 'Руководство по настройке камер для пунктов выдачи заказов Wildberries',
+      icon: Package,
+      href: '/wb-integration',
+      steps: '10 шагов',
+      testId: 'card-wb-integration'
     }
   ];
 
