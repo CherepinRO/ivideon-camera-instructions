@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкции Ivideon - Руководства по работе с системой видеонаблюдения</title>
+    <meta name="description" content="Полный набор инструкций по подключению, настройке, интеграции и регистрации в системе видеонаблюдения Ivideon. Пошаговые руководства с иллюстрациями.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background-color: #0066CC;
+            color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: #f8f9fa;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #0066CC;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .card-title-wrapper {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .card-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: rgba(0, 102, 204, 0.1);
+            color: #0066CC;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border-radius: 1rem;
+        }
+
+        .card-description {
+            font-size: 1.125rem;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+
+            .hero {
+                margin-bottom: 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+
+            .card-title {
+                font-size: 1.25rem;
+            }
+
+            .card-description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div class="logo-icon">📹</div>
+                <h1>Ivideon</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Инструкции Ivideon</h1>
+            <p>Выберите интересующую вас инструкцию для работы с системой видеонаблюдения</p>
+        </div>
+
+        <div class="cards-grid">
+            <a href="ivideon-landing.html" class="card">
+                <div class="card-header">
+                    <div class="card-icon">📷</div>
+                    <div class="card-title-wrapper">
+                        <h2 class="card-title">Подключение камер</h2>
+                        <span class="card-badge">7 шагов</span>
+                    </div>
+                </div>
+                <p class="card-description">
+                    Пошаговая инструкция по подключению IP-камеры Ivideon через кабель или Wi-Fi
+                </p>
+            </a>
+
+            <a href="wb-integration.html" class="card">
+                <div class="card-header">
+                    <div class="card-icon">📦</div>
+                    <div class="card-title-wrapper">
+                        <h2 class="card-title">Интеграция с WB.Point</h2>
+                        <span class="card-badge">10 шагов</span>
+                    </div>
+                </div>
+                <p class="card-description">
+                    Руководство по настройке камер для пунктов выдачи заказов Wildberries
+                </p>
+            </a>
+
+            <a href="time-settings.html" class="card">
+                <div class="card-header">
+                    <div class="card-icon">⏰</div>
+                    <div class="card-title-wrapper">
+                        <h2 class="card-title">Настройка времени</h2>
+                        <span class="card-badge">4 шага</span>
+                    </div>
+                </div>
+                <p class="card-description">
+                    Инструкция по настройке правильного времени на камере и в облачном архиве
+                </p>
+            </a>
+
+            <a href="registration.html" class="card">
+                <div class="card-header">
+                    <div class="card-icon">👤</div>
+                    <div class="card-title-wrapper">
+                        <h2 class="card-title">Регистрация</h2>
+                        <span class="card-badge">3 шага</span>
+                    </div>
+                </div>
+                <p class="card-description">
+                    Создание личного кабинета в системе видеонаблюдения Ivideon
+                </p>
+            </a>
+        </div>
+    </main>
+</body>
+</html>

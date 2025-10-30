@@ -50,28 +50,17 @@
             font-weight: 600;
         }
 
-        .header-nav {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .header-nav a {
+        .back-button {
             color: white;
             text-decoration: none;
-            padding: 0.5rem 0.65rem;
+            padding: 0.5rem 1rem;
             border-radius: 6px;
             transition: background-color 0.2s;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
-        .header-nav a:hover {
+        .back-button:hover {
             background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .header-nav a.active {
-            background-color: white;
-            color: #0066CC;
-            font-weight: 600;
         }
 
         main {
@@ -198,13 +187,9 @@
                 font-size: 1.25rem;
             }
 
-            .header-nav {
-                gap: 0.25rem;
-            }
-
-            .header-nav a {
-                padding: 0.4rem 0.4rem;
-                font-size: 0.7rem;
+            .back-button {
+                padding: 0.4rem 0.75rem;
+                font-size: 0.875rem;
             }
 
             main {
@@ -264,12 +249,7 @@
                 <div class="logo-icon">📹</div>
                 <h1>Ivideon</h1>
             </div>
-            <nav class="header-nav">
-                <a href="ivideon-landing.html" class="active">Подключение</a>
-                <a href="wb-integration.html">WB.Point</a>
-                <a href="time-settings.html">Время</a>
-                <a href="registration.html">Регистрация</a>
-            </nav>
+            <a href="index.html" class="back-button">← Все инструкции</a>
         </div>
     </header>
 
