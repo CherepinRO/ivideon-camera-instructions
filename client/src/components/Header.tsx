@@ -10,10 +10,10 @@ export default function Header() {
           Ivideon
         </h1>
         
-        <nav className="flex gap-2 md:gap-3" data-testid="header-nav">
+        <nav className="flex gap-1 md:gap-3" data-testid="header-nav">
           <Link 
             href="/"
-            className={`text-xs md:text-base px-2 md:px-4 py-2 rounded-md transition-colors ${
+            className={`text-xs md:text-base px-2 md:px-3 py-2 rounded-md transition-colors ${
               location === '/' 
                 ? 'bg-primary-foreground text-primary font-semibold' 
                 : 'text-primary-foreground hover:bg-primary-foreground/10'
@@ -24,7 +24,7 @@ export default function Header() {
           </Link>
           <Link 
             href="/wb-integration"
-            className={`text-xs md:text-base px-2 md:px-4 py-2 rounded-md transition-colors ${
+            className={`text-xs md:text-base px-2 md:px-3 py-2 rounded-md transition-colors ${
               location === '/wb-integration' 
                 ? 'bg-primary-foreground text-primary font-semibold' 
                 : 'text-primary-foreground hover:bg-primary-foreground/10'
@@ -35,7 +35,7 @@ export default function Header() {
           </Link>
           <Link 
             href="/time-settings"
-            className={`text-xs md:text-base px-2 md:px-4 py-2 rounded-md transition-colors ${
+            className={`text-xs md:text-base px-2 md:px-3 py-2 rounded-md transition-colors ${
               location === '/time-settings' 
                 ? 'bg-primary-foreground text-primary font-semibold' 
                 : 'text-primary-foreground hover:bg-primary-foreground/10'
@@ -43,6 +43,17 @@ export default function Header() {
             data-testid="nav-link-time"
           >
             Время
+          </Link>
+          <Link 
+            href="/registration"
+            className={`text-xs md:text-base px-2 md:px-3 py-2 rounded-md transition-colors ${
+              location === '/registration' 
+                ? 'bg-primary-foreground text-primary font-semibold' 
+                : 'text-primary-foreground hover:bg-primary-foreground/10'
+            }`}
+            data-testid="nav-link-registration"
+          >
+            Регистрация
           </Link>
         </nav>
       </div>

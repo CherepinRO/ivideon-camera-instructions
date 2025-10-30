@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Настройка времени на камере Ivideon - Инструкция</title>
-    <meta name="description" content="Пошаговая инструкция по настройке правильного времени на камере Ivideon. Настройка часового пояса и времени на устройстве для корректного отображения в облачном архиве.">
+    <title>Регистрация личного кабинета Ivideon - Инструкция</title>
+    <meta name="description" content="Пошаговая инструкция по регистрации личного кабинета в системе видеонаблюдения Ivideon. Создание аккаунта для управления IP-камерами.">
     <style>
         * {
             margin: 0;
@@ -113,6 +113,30 @@
         .intro-section p {
             font-size: 1.125rem;
             color: #4a4a4a;
+            margin-bottom: 1rem;
+        }
+
+        .site-link-box {
+            background-color: rgba(0, 102, 204, 0.05);
+            border-left: 4px solid #0066CC;
+            padding: 1.5rem 2rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1rem;
+        }
+
+        .site-link-box p {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .site-link-box a {
+            color: #0066CC;
+            text-decoration: none;
+        }
+
+        .site-link-box a:hover {
+            text-decoration: underline;
         }
 
         .instructions-container {
@@ -167,43 +191,40 @@
             border: 1px solid #e5e7eb;
         }
 
-        .info-box {
-            background-color: #f8f9fa;
-            border: 1px solid #e5e7eb;
+        .important-note {
+            background-color: #fef3c7;
+            border: 1px solid #fcd34d;
             border-radius: 8px;
             padding: 2rem;
             margin-top: 2rem;
         }
 
-        .info-box h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
-        }
-
-        .info-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .info-list li {
-            padding: 0.75rem 0;
+        .important-note-header {
             display: flex;
             align-items: start;
-            gap: 0.75rem;
+            gap: 1rem;
         }
 
-        .info-list li::before {
-            content: "•";
-            color: #0066CC;
-            font-weight: bold;
+        .important-icon {
+            flex-shrink: 0;
+            color: #d97706;
             font-size: 1.5rem;
-            line-height: 1.5rem;
         }
 
-        .info-list strong {
-            color: #1a1a1a;
+        .important-note h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #78350f;
+            margin-bottom: 0.5rem;
+        }
+
+        .important-note p {
+            font-size: 1.125rem;
+            color: #92400e;
+        }
+
+        .important-note strong {
+            font-weight: 700;
         }
 
         section {
@@ -248,6 +269,14 @@
                 font-size: 1rem;
             }
 
+            .site-link-box {
+                padding: 1rem 1.5rem;
+            }
+
+            .site-link-box p {
+                font-size: 1rem;
+            }
+
             .step-badge {
                 min-width: 40px;
                 width: 40px;
@@ -260,8 +289,16 @@
                 padding-top: 0.5rem;
             }
 
-            .info-box {
+            .important-note {
                 padding: 1.5rem;
+            }
+
+            .important-note h3 {
+                font-size: 1.125rem;
+            }
+
+            .important-note p {
+                font-size: 1rem;
             }
         }
     </style>
@@ -276,21 +313,29 @@
             <nav class="header-nav">
                 <a href="ivideon-landing.html">Подключение</a>
                 <a href="wb-integration.html">WB.Point</a>
-                <a href="time-settings.html" class="active">Время</a>
-                <a href="registration.html">Регистрация</a>
+                <a href="time-settings.html">Время</a>
+                <a href="registration.html" class="active">Регистрация</a>
             </nav>
         </div>
     </header>
 
     <main>
         <div class="page-header">
-            <h1 class="page-title">Настройка времени</h1>
-            <p class="page-subtitle">На камере отображается неверное время</p>
+            <h1 class="page-title">Регистрация личного кабинета</h1>
+            <p class="page-subtitle">Создание аккаунта в системе Ivideon</p>
         </div>
 
         <section class="intro-section">
-            <h2>Инструкция по настройке времени</h2>
-            <p>Пошаговое руководство по настройке правильного времени на камере Ivideon и в облачном архиве.</p>
+            <h2>Инструкция по регистрации</h2>
+            <p>Пошаговое руководство по созданию личного кабинета в системе видеонаблюдения Ivideon.</p>
+            <div class="site-link-box">
+                <p>
+                    Для регистрации заходим на сайт: 
+                    <a href="https://ru.ivideon.com/" target="_blank" rel="noopener noreferrer">
+                        https://ru.ivideon.com/
+                    </a>
+                </p>
+            </div>
         </section>
 
         <section>
@@ -298,57 +343,43 @@
                 <div class="instruction-step">
                     <div class="step-header">
                         <div class="step-badge">1</div>
-                        <p class="step-text">Для настройки времени нужно выбрать камеру и нажать на 3 точки в правом нижнем углу</p>
+                        <p class="step-text">Нажимаем «Войти»</p>
                     </div>
                     <div class="step-image">
-                        <img src="attached_assets/page3_time_settings/images/image1.png" alt="Выбор камеры для настройки времени">
+                        <img src="attached_assets/page4_registration/images/image1.png" alt="Кнопка входа на сайте Ivideon">
                     </div>
                 </div>
 
                 <div class="instruction-step">
                     <div class="step-header">
                         <div class="step-badge">2</div>
-                        <p class="step-text">Выбираем настройки камеры</p>
+                        <p class="step-text">Затем выбираем «Регистрация»</p>
                     </div>
                     <div class="step-image">
-                        <img src="attached_assets/page3_time_settings/images/image2.png" alt="Меню настроек камеры">
+                        <img src="attached_assets/page4_registration/images/image2.png" alt="Переход к регистрации">
                     </div>
                 </div>
 
                 <div class="instruction-step">
                     <div class="step-header">
                         <div class="step-badge">3</div>
-                        <p class="step-text">Настройки системные</p>
+                        <p class="step-text">Указываем все необходимые данные и регистрируемся</p>
                     </div>
                     <div class="step-image">
-                        <img src="attached_assets/page3_time_settings/images/image3.png" alt="Системные настройки">
+                        <img src="attached_assets/page4_registration/images/image3.png" alt="Форма регистрации">
                     </div>
                 </div>
 
-                <div class="instruction-step">
-                    <div class="step-header">
-                        <div class="step-badge">4</div>
-                        <p class="step-text">Нужно поменять время</p>
+                <div class="important-note">
+                    <div class="important-note-header">
+                        <div class="important-icon">⚠️</div>
+                        <div>
+                            <h3>Важно</h3>
+                            <p>
+                                Логин, по которому вы будете заходить в Личный кабинет Ivideon — это <strong>адрес электронной почты</strong>
+                            </p>
+                        </div>
                     </div>
-                    <div class="step-image">
-                        <img src="attached_assets/page3_time_settings/images/image4.png" alt="Настройка времени">
-                    </div>
-                </div>
-
-                <div class="info-box">
-                    <h3>Параметры времени</h3>
-                    <ul class="info-list">
-                        <li>
-                            <div>
-                                <strong>Часовой пояс</strong> – это время отображается в облачном архиве
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <strong>Время на устройстве</strong> – это время показанное на камере
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>

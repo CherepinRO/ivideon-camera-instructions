@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import WBIntegration from "@/pages/WBIntegration";
 import TimeSettings from "@/pages/TimeSettings";
+import Registration from "@/pages/Registration";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -14,6 +15,7 @@ function Router() {
       <Route path="/" component={Home}/>
       <Route path="/wb-integration" component={WBIntegration}/>
       <Route path="/time-settings" component={TimeSettings}/>
+      <Route path="/registration" component={Registration}/>
       <Route component={NotFound} />
     </Switch>
   );
