@@ -37,20 +37,10 @@ export default function CameraActivation() {
       <Header />
       
       <main className="max-w-4xl mx-auto px-4 md:px-8 py-8 md:py-12">
-        <div className="mb-8 md:mb-12 space-y-4">
+        <div className="mb-8 md:mb-12">
           <h1 className="text-3xl md:text-4xl font-bold" data-testid="page-title">
             Активация камер
           </h1>
-          <p className="text-base md:text-lg text-primary" data-testid="reference-link">
-            <a 
-              href="https://linkvideo.ru/cube_instruction#!/tab/741095969-1" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              https://linkvideo.ru/cube_instruction#!/tab/741095969-1
-            </a>
-          </p>
         </div>
 
         <div className="space-y-12 md:space-y-16">
