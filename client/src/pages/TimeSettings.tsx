@@ -1,4 +1,3 @@
-import Header from '@/components/Header';
 import InstructionStep from '@/components/InstructionStep';
 
 import image1 from '@assets/page3_time_settings/images/image1.png';
@@ -9,8 +8,6 @@ import image4 from '@assets/page3_time_settings/images/image4.png';
 export default function TimeSettings() {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      
       <main className="max-w-4xl mx-auto px-4 md:px-8 py-8 md:py-12">
         <div className="mb-8 md:mb-12">
           <h1 className="text-3xl md:text-4xl font-bold mb-4" data-testid="page-title">

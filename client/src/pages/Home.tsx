@@ -1,4 +1,3 @@
-import Header from '@/components/Header';
 import InstructionStep from '@/components/InstructionStep';
 import ivideonScreenshot from '@assets/high_res/images/image1.png';
 import deviceSelectionScreenshot from '@assets/high_res/images/image2.png';
@@ -11,8 +10,6 @@ import qrCodeScreenshot from '@assets/high_res/images/image7.png';
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      
       <main className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16">
         <h1 
           className="text-3xl md:text-4xl font-bold tracking-tight mb-12 md:mb-16"
